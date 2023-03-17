@@ -1,3 +1,25 @@
+class Carta:
+    def __init__(self, pinta: str, valor: str):
+        self.pinta = pinta
+        self.valor = valor
+        self.tapado: bool = False
+
+class Mano:
+    def __init__(self, cartas: tuple):
+        self.cartas = list[Carta] = []
+        self.cartas.extend(cartas)
+
+    def valor_mano(self, cartas):
+        pass
+
+    def comparar_manos(self, cartas):
+        pass
+
+    def destapar_oculta(self, cartas):
+        pass
+
+    def es_blackjack(self) -> bool:
+        pass
 
 class BlackJack:
     def _init_(self, apuesta: int):
@@ -41,12 +63,6 @@ class Jugador:
     def inicializar_mano(self, cartas):
         pass
 
-class Carta:
-    def __init__(self, pinta: str, valor: str):
-        self.pinta = pinta
-        self.valor = valor
-        self.tapado = bool
-
 
 class Baraja:
     def __init__(self):
@@ -67,21 +83,7 @@ class Casa:
         pass
 
 
-class Mano:
-    def __init__(self, cartas):
-        self.cartas = cartas
 
-    def valor_mano(self, cartas):
-        pass
-
-    def comparar_manos(self, cartas):
-        pass
-
-    def destapar_oculta(self, cartas):
-        pass
-
-    def es_blackjack(self) -> bool:
-        pass
 
 
 
